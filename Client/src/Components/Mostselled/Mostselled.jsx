@@ -3,12 +3,12 @@ import './Mostselled.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const MostSelled = ({ handleAddToCart }) => {
+const MostSelled = () => {
   React.useEffect(() => {
     AOS.init({
-      duration: 1200, // Time in ms
-      easing: 'ease-out-back', // Custom easing
-      once: true, // Animation triggers only once
+      duration: 1200,
+      easing: 'ease-out-back',
+      once: true,
     });
   }, []);
 
@@ -81,7 +81,7 @@ const MostSelled = ({ handleAddToCart }) => {
               <p>{product.reviews}</p>
               <p>{product.price}</p>
               <p>{product.description}</p>
-              <button className="shop-now" onClick={() => handleAddToCart(product)} data-aos="fade-up">
+              <button className="shop-now" data-aos="fade-up">
                 Add to Cart
               </button>
             </div>

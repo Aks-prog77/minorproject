@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './AboutUs.css';
 
 const AboutUs = () => {
+    // Scroll to the top on page load
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div className="about-us">
-            <h1>About Us</h1>
+            <h1 className="about-title">About Us</h1>
 
             <section className="about-section">
                 <h2>Our Mission</h2>

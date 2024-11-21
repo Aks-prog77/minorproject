@@ -3,7 +3,7 @@ import './Featured.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const Featured = ({ handleAddToCart }) => {
+const Featured = () => {
   React.useEffect(() => {
     AOS.init({
       duration: 1200, // Animation duration
@@ -78,15 +78,15 @@ const Featured = ({ handleAddToCart }) => {
           <div
             className="product-card"
             key={product.id}
-            data-aos="fade-up" // AOS fade-up animation on scroll
-            data-aos-delay={100 * product.id} // Adding a slight delay for each card
+            data-aos="fade-up"
+            data-aos-delay={100 * product.id}
           >
             <div className="product-info">
               <h3>{product.name}</h3>
               <p>{product.reviews}</p>
               <p>{product.price}</p>
               <p>{product.description}</p>
-              <button className="shop-now" onClick={() => handleAddToCart(product)}>
+              <button className="shop-now">
                 Add to Cart
               </button>
             </div>

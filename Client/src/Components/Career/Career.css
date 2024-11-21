@@ -1,0 +1,119 @@
+/* Career.css */
+.career {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f9f9f9;
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 1s ease-in-out forwards; /* Apply fade-in animation */
+  }
+  
+  .career h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .career p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+  
+  .job-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid layout */
+    gap: 2rem;
+    justify-items: center;
+  }
+  
+  .job-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 1s ease-in-out forwards; /* Apply fade-in animation */
+  }
+  
+  .job-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #222;
+  }
+  
+  .job-location,
+  .job-type {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .job-description {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 1rem;
+  }
+  
+  /* Animation for fade-in effect */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px); /* Start slightly below */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .career h2 {
+      font-size: 1.8rem;
+    }
+  
+    .job-card h3 {
+      font-size: 1.2rem;
+    }
+  
+    .job-location,
+    .job-type {
+      font-size: 0.9rem;
+    }
+  
+    .job-description {
+      font-size: 0.9rem;
+    }
+  
+    .job-list {
+      gap: 1.5rem; /* Reduce gap for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .career h2 {
+      font-size: 1.5rem;
+    }
+  
+    .job-card h3 {
+      font-size: 1rem;
+    }
+  
+    .job-location,
+    .job-type {
+      font-size: 0.9rem;
+    }
+  
+    .job-description {
+      font-size: 0.8rem;
+    }
+  
+    .job-card {
+      max-width: 90%; /* Make job cards take up more space on smaller screens */
+    }
+  }
+  

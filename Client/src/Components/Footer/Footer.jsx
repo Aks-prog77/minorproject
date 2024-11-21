@@ -20,9 +20,7 @@ const Footer = () => {
           <ul>
             <li><Link to="/">Home</Link></li> {/* Use Link for routing */}
             <li><Link to="/about">About Us</Link></li>
-            <li><Link to="/FAQ">FAQ</Link></li>
             <li><Link to="/services">Services</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
           </ul>
         </div>
 
@@ -33,7 +31,6 @@ const Footer = () => {
             <li><Link to="/team">Team</Link></li>
             <li><Link to="/career">Career</Link></li>
             <li><Link to="/testimonials">Testimonials</Link></li>
-            <li><Link to="/journal">Journal</Link></li>
           </ul>
         </div>
 
@@ -64,4 +61,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Footer; 

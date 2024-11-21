@@ -1,0 +1,120 @@
+/* Main container styling */
+.services {
+    text-align: center;
+    padding: 40px 20px;
+    animation: fadeIn 1s ease-in-out forwards; /* Fade-in animation */
+    opacity: 0; /* Start hidden */
+}
+
+/* Title styling */
+.services-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Services list container */
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual service item styling */
+.service-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    opacity: 0; /* Start hidden */
+    animation: slideIn 0.8s ease-in-out forwards; /* Slide-in animation */
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon styling */
+.service-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+/* Title styling */
+.service-item h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Description styling */
+.service-item p {
+    color: #555;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Fade-in animation for services container */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Slightly below the initial position */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Slide-in animation for service items */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px); /* Slightly off-screen to the left */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-title {
+        font-size: 28px;
+    }
+
+    .services-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-title {
+        font-size: 24px;
+    }
+
+    .service-icon {
+        font-size: 2rem;
+    }
+
+    .service-item {
+        padding: 15px;
+    }
+}

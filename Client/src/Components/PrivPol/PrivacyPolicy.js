@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './PrivacyPolicy.css'; // Import your CSS file
 
 const PrivacyPolicy = () => {
+    // Scroll to the top on page load
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div className="privacy-container">
             <h1>Privacy Policy</h1>
