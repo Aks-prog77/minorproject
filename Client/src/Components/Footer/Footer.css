@@ -1,58 +1,61 @@
 .footer {
-    background-color: #333;
-    color: white;
-    padding: 40px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-  }
-  
-  .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-  }
-  
-  .footer-section {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  .footer-section h3 {
-    margin-bottom: 10px;
-  }
-  
-  .footer-section ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .footer-section ul li a {
-    color: white;
-    text-decoration: none;
-    margin-bottom: 10px;
-    display: block;
-    transition: color 0.3s ease;
-  }
-  
-  .footer-section ul li a:hover {
-    color: #ffffff;
-  }
-  
-  .footer-bottom {
-    text-align: center;
-    padding: 10px;
-    border-top: 1px solid #444;
-  }
-  
-  .social-icons a {
-    margin: 0 10px;
-    font-size: 18px;
-    color: white;
-  }
-  
-  .social-icons a:hover {
-    color: #f1c40f;
-  }
-  
+  background-color: #333;
+  color: white;
+  padding: 40px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 18px; /* Increased base font size */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.footer-section h3 {
+  margin-bottom: 15px; /* Slightly increased spacing */
+  font-size: 20px; /* Increased heading size */
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 12px; /* Increased spacing */
+  display: block;
+  font-size: 18px; /* Increased font size for links */
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #ffffff;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 15px; /* Increased padding */
+  border-top: 1px solid #444;
+  font-size: 16px; /* Slightly larger footer text */
+}
+
+.social-icons a {
+  margin: 0 12px; /* Increased spacing between icons */
+  font-size: 22px; /* Increased icon size */
+  color: white;
+}
+
+.social-icons a:hover {
+  color: #f1c40f;
+}
