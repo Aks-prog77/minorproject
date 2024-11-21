@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Tc.css';
 
 const Tc = () => {
+  useEffect(() => {
+    // Ensure the page starts at the top without any scrolling
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <div className="terms-container">
+    <div className="terms-container animated-fadeIn">
       <h1>Terms and Conditions</h1>
-      
+
       <h2>1. Introduction</h2>
       <p>Welcome to Access Zone. These Terms and Conditions outline the rules and regulations for the use of Access Zone's Website.</p>
 
@@ -31,7 +36,7 @@ const Tc = () => {
       <p>These terms will be governed by and interpreted in accordance with the laws of the jurisdiction where Access Zone operates.</p>
 
       <h2>9. Contact Us</h2>
-      <p>If you have any questions about these Terms and Conditions, please contact us at Acess Zone.</p>
+      <p>If you have any questions about these Terms and Conditions, please contact us at Access Zone.</p>
     </div>
   );
 };

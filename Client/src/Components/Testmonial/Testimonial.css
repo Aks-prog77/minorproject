@@ -1,0 +1,107 @@
+/* Container Styling */
+.testimonials {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out forwards; /* Fade-in effect */
+    opacity: 0; /* Start hidden */
+}
+
+/* Title Styling */
+.testimonials-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Testimonial Item Styling */
+.testimonial-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.8s ease-in-out forwards; /* Slide-in animation */
+    opacity: 0; /* Start hidden */
+}
+
+/* Photo Styling */
+.testimonial-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #ddd;
+}
+
+/* Name Styling */
+.testimonial-item h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+    margin: 10px 0;
+}
+
+/* Rating and Review Styling */
+.testimonial-rating {
+    font-size: 16px;
+    color: #f39c12; /* Gold color */
+    margin: 5px 0;
+}
+
+.testimonial-review {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .testimonials {
+        padding: 10px;
+    }
+
+    .testimonials-title {
+        font-size: 24px;
+    }
+
+    .testimonial-item {
+        padding: 15px;
+    }
+}

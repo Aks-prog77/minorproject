@@ -1,0 +1,118 @@
+/* Clients.css */
+.clients {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f9f9f9;
+    opacity: 0; /* Initially hidden */
+    animation: fadeInSection 1s ease-in-out forwards; /* Apply fade-in animation */
+  }
+  
+  .clients h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 1s ease-in-out forwards; /* Apply fade-in animation for heading */
+  }
+  
+  .client-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid layout */
+    gap: 2rem;
+    justify-items: center;
+  }
+  
+  .client-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Initially hidden */
+    animation: fadeInCard 1s ease-in-out forwards; /* Apply fade-in animation for each card */
+  }
+  
+  .client-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  .client-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #222;
+  }
+  
+  .client-card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Animation for section fade-in */
+  @keyframes fadeInSection {
+    from {
+      opacity: 0;
+      transform: translateY(20px); /* Start slightly below */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Animation for client cards fade-in */
+  @keyframes fadeInCard {
+    from {
+      opacity: 0;
+      transform: translateY(20px); /* Start slightly below */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .clients h2 {
+      font-size: 1.8rem;
+    }
+  
+    .client-card h3 {
+      font-size: 1rem;
+    }
+  
+    .client-card p {
+      font-size: 0.9rem;
+    }
+  
+    .client-list {
+      gap: 1.5rem; /* Reduce gap for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .clients h2 {
+      font-size: 1.5rem;
+    }
+  
+    .client-card h3 {
+      font-size: 0.9rem;
+    }
+  
+    .client-card p {
+      font-size: 0.8rem;
+    }
+  
+    .client-card img {
+      width: 60px; /* Smaller images for smaller screens */
+      height: 60px;
+    }
+  }
+  
