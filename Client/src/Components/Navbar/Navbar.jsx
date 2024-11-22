@@ -3,12 +3,11 @@ import './Navbar.css';
 import pe_logo3 from './logo.jpg';
 import { Search, ShoppingCart, UserRound } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-import Cart from '../Cart/Cart';
 
-const Navbar = ({ auth, handleRemove }) => {
+const Navbar = ({ cartItems, auth, handleRemove }) => {
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
 
   const handleCartClick = (e) => {
     e.preventDefault();
@@ -20,11 +19,11 @@ const Navbar = ({ auth, handleRemove }) => {
   };
 
   const closeMenu = () => {
-    setIsMobileMenuOpen(false); // Fix: Added missing closing brace
+    setIsMobileMenuOpen(false);
   };
 
   const handleSignUpClick = () => {
-    navigate('/signup'); // Navigate to signup page
+    navigate('/signup');
   };
 
   return (
@@ -32,16 +31,17 @@ const Navbar = ({ auth, handleRemove }) => {
       <nav className="navbar">
         {/* Logo Section */}
         <div className="navbar-logo">
-          <img src={pe_logo3} alt="Pearl Essence Logo" className="logo-image" />
+          <img src={pe_logo3} alt="Pearl Essence Logo" className="logo-image" a href= "/home"/>
         </div>
 
         {/* Mobile Menu Toggle */}
-        <div className="mobile-menu-icon" onClick={toggleMobileMenu}>
+        <div className="mobile-menu-icon" onClick={toggleMobileMenu} a href ="/home">
           <span className="hamburger">&#9776;</span>
         </div>
 
         {/* Main Navigation Links */}
         <ul className={`navbar-links ${isMobileMenuOpen ? 'active' : ''}`}>
+          <li><a href="/Home">Home</a></li>
           <li><a href="/tempered-glass">Tempered Glass</a></li>
           <li><a href="/back-covers">Back Covers</a></li>
           <li><a href="/mobile-chargers">Mobile Chargers</a></li>
@@ -58,10 +58,10 @@ const Navbar = ({ auth, handleRemove }) => {
             </a>
           </li>
           <li>
-            <a href="#cart" onClick={handleCartClick} aria-label="Shopping Cart">
+            <button onClick={handleCartClick} aria-label="Shopping Cart" className="cart-button">
               <ShoppingCart size={21} />
-            </a>
-          </li>  
+            </button>
+          </li>
           <li>
             {auth ? (
               <button
@@ -80,30 +80,38 @@ const Navbar = ({ auth, handleRemove }) => {
               </a>
             )}
           </li>
-          <li>
-            <button 
-              className="signup-button" 
-              onClick={handleSignUpClick}
-              aria-label="Sign In/Sign Up"
-              type="button"
-            >
-              Sign In/Sign Up
-            </button>
-          </li>
         </ul>
       </nav>
 
-      {/* Cart Modal */}
-      {isCartOpen && <Cart isOpen={isCartOpen} setIsOpen={setIsCartOpen} onAddToCart={() => {}} />}
+      {/* Cart Dropdown */}
+      {isCartOpen && (
+        <div className="cart-dropdown">
+          <h3>Shopping Cart</h3>
+          {cartItems.length > 0 ? (
+            <ul>
+              {cartItems.map((item) => (
+                <li key={item.id}>
+                  <span>{item.name}</span>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p>Your cart is empty.</p>
+          )}
+          <button className="checkout-button" onClick={() => navigate('/cart')}>
+            Go to Cart
+          </button>
+        </div>
+      )}
 
       {/* Mobile Menu Icons */}
       <div className={`mobile-menu-icons ${isMobileMenuOpen ? 'active' : ''}`}>
         <a href="#search" aria-label="Search">
           <Search size={24} />
         </a>
-        <a href="#cart" onClick={handleCartClick} aria-label="Cart">
+        <button onClick={handleCartClick} aria-label="Cart" className="cart-button">
           <ShoppingCart size={24} />
-        </a>
+        </button>
         {auth ? (
           <button
             onClick={() => {
@@ -120,13 +128,6 @@ const Navbar = ({ auth, handleRemove }) => {
             <UserRound size={24} />
           </a>
         )}
-        <button 
-          className="signup-button" 
-          onClick={handleSignUpClick}
-          aria-label="Sign In/Sign Up"
-        >
-          Sign In/Sign Up
-        </button>
       </div>
     </>
   );

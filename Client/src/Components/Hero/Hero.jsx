@@ -63,7 +63,6 @@ const Hero = () => {
       <div className="hero-content">
         <h1 data-aos="fade-down">Welcome to AccessZone</h1>
         <p data-aos="fade-up" data-aos-delay="300">Discover the latest electronic devices accessories</p>
-        <button className="cta-btn" data-aos="zoom-in" data-aos-delay="600">Shop Now</button>
       </div>
       <button className="control-btn left" onClick={handlePrev} data-aos="fade-right" data-aos-delay="800">
         &#8592;

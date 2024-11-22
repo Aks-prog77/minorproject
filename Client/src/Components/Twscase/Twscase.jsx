@@ -12,7 +12,7 @@ const Twscase = () => {
     {
       id: 1,
       name: "Compact TWS Case",
-      image: "https://via.placeholder.com/150",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqMdBuqsiKAtujHyz9t8HcQnE6SztHphlJDA&s",
       keyFeatures: "Compact, Protective",
       detailedDescription: `This compact TWS case is designed to offer complete protection for your earbuds while being lightweight and easy to carry.`,
       price: 500,
@@ -21,7 +21,7 @@ const Twscase = () => {
     {
       id: 2,
       name: "Premium Leather TWS Case",
-      image: "https://via.placeholder.com/150",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsBXGe1b_WZ7PNuG60LQbtcHT6RH0-uBZURQ&s",
       keyFeatures: "Leather, Durable",
       detailedDescription: `Made from high-quality leather, this TWS case offers a luxurious feel and long-lasting protection for your wireless earbuds.`,
       price: 700,
@@ -30,7 +30,7 @@ const Twscase = () => {
     {
       id: 3,
       name: "Waterproof TWS Case",
-      image: "https://via.placeholder.com/150",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF5Hw9iIHgOrlStGLD8m4EyPIPCd8UyszOXw&s",
       keyFeatures: "Waterproof, Shockproof",
       detailedDescription: `Keep your earbuds safe from water damage with this waterproof TWS case, which also provides shockproof protection.`,
       price: 650,
@@ -39,7 +39,7 @@ const Twscase = () => {
     {
       id: 4,
       name: "Magnetic TWS Case",
-      image: "https://via.placeholder.com/150",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNzlwEA-s3tPNL4R9ppvJI-4qZijR7joIbbQ&s",
       keyFeatures: "Magnetic closure, Sleek design",
       detailedDescription: `This sleek TWS case features a magnetic closure that keeps your earbuds securely in place while providing a modern, minimalist look.`,
       price: 600,
@@ -48,7 +48,7 @@ const Twscase = () => {
     {
       id: 5,
       name: "Hard Shell TWS Case",
-      image: "https://via.placeholder.com/150",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQNsuFwfgeW4XoA2grZa2oT8rw0ygw2q-0tg&s",
       keyFeatures: "Hard shell, Protective",
       detailedDescription: `A hard shell TWS case that offers maximum protection against drops and impacts, ensuring your earbuds are always safe.`,
       price: 550,
@@ -57,7 +57,7 @@ const Twscase = () => {
     {
       id: 6,
       name: "Slim TWS Case",
-      image: "https://via.placeholder.com/150",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6gPGc5DYJDoFpXSksthjrzdoxFndTK7pHBA&s",
       keyFeatures: "Slim design, Lightweight",
       detailedDescription: `This slim and lightweight TWS case offers easy portability while still providing protection for your earbuds.`,
       price: 480,
@@ -66,7 +66,7 @@ const Twscase = () => {
     {
       id: 7,
       name: "Luxury Wooden TWS Case",
-      image: "https://via.placeholder.com/150",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaATqTXY8_n3foohEzXgpPYMA7hBPILEbl6A&s",
       keyFeatures: "Wooden, Elegant",
       detailedDescription: `A unique wooden TWS case that provides a luxurious and natural look while safeguarding your earbuds.`,
       price: 900,
@@ -75,7 +75,7 @@ const Twscase = () => {
     {
       id: 8,
       name: "Silicone TWS Case",
-      image: "https://via.placeholder.com/150",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtr-NiH1LxwgejO6zQGU8BSMMHtliWEcXiOA&s",
       keyFeatures: "Soft silicone, Shockproof",
       detailedDescription: `This soft silicone TWS case offers shockproof protection while being soft to the touch and easy to grip.`,
       price: 450,
@@ -84,7 +84,7 @@ const Twscase = () => {
     {
       id: 9,
       name: "Transparent TWS Case",
-      image: "https://via.placeholder.com/150",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTol03T8ox7pMsaBHFrW0MFJhVVFP0xSHVhw&s",
       keyFeatures: "Clear, Modern design",
       detailedDescription: `This transparent TWS case allows you to show off the design of your earbuds while keeping them safe and secure.`,
       price: 500,
@@ -93,7 +93,7 @@ const Twscase = () => {
     {
       id: 10,
       name: "Wireless Charging TWS Case",
-      image: "https://via.placeholder.com/150",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF6qqvs2F56MUntuNxo969aZNm5u9DImnCJQ&s",
       keyFeatures: "Wireless charging, Convenient",
       detailedDescription: `This TWS case supports wireless charging, making it convenient and easy to power up your earbuds without cables.`,
       price: 750,
@@ -102,7 +102,7 @@ const Twscase = () => {
     {
       id: 11,
       name: "Carbon Fiber TWS Case",
-      image: "https://via.placeholder.com/150",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tPoNc4u2AQAOgmoifetWiuJhunB21FxcVA&s",
       keyFeatures: "Carbon fiber, Durable",
       detailedDescription: `Made from carbon fiber, this TWS case offers a strong, lightweight build and provides excellent protection against drops.`,
       price: 800,
@@ -111,7 +111,7 @@ const Twscase = () => {
     {
       id: 12,
       name: "Flip-Top TWS Case",
-      image: "https://via.placeholder.com/150",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXjhMbg4na7yRTPBDOvTEiN41leYdYgVEAsw&s",
       keyFeatures: "Flip-top lid, Secure",
       detailedDescription: `This flip-top TWS case ensures your earbuds stay secure with a simple yet effective lid mechanism.`,
       price: 650,

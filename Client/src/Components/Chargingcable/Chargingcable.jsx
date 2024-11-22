@@ -3,7 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './Chargingcable.css';
 
-const Chargingcable = () => {
+const Chargingcable = ( {addToCart} ) => {
   useEffect(() => {
     AOS.init({ duration: 1000, easing: 'ease-in-out' });
   }, []);
@@ -12,7 +12,7 @@ const Chargingcable = () => {
     {
       id: 1,
       name: "USB-C to Lightning Cable",
-      image: "https://via.placeholder.com/150",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREqFP1JGHdprPl4e4sUWev8c5P8KaHXMz7OA&s",
       keyFeatures: "Fast charging, Durable material",
       detailedDescription: `This USB-C to Lightning cable is designed for fast charging and is made from a durable material to withstand daily use.`,
       price: 300,
@@ -21,7 +21,7 @@ const Chargingcable = () => {
     {
       id: 2,
       name: "Type-C to Type-C Cable",
-      image: "https://via.placeholder.com/150",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3z-bNd4twXRA3Sw81PD43iDF1qxJKHcC-lA&s",
       keyFeatures: "Data transfer, 60W Power Delivery",
       detailedDescription: `This Type-C to Type-C cable offers fast data transfer and supports 60W Power Delivery for charging your devices quickly.`,
       price: 450,
@@ -30,7 +30,7 @@ const Chargingcable = () => {
     {
       id: 3,
       name: "Micro USB Cable",
-      image: "https://via.placeholder.com/150",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVDPm5VD3e90tBPpLkUh0ZM0Xabazyg_3kAQ&s",
       keyFeatures: "Durable, 2 meters long",
       detailedDescription: `A sturdy and durable micro USB cable with a length of 2 meters, perfect for charging and data transfer.`,
       price: 200,
@@ -39,7 +39,7 @@ const Chargingcable = () => {
     {
       id: 4,
       name: "Braided USB-C Cable",
-      image: "https://via.placeholder.com/150",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXV2em67H-dHlhMxI1IrOex9t6_I7LOl-BLA&s",
       keyFeatures: "Anti-tangle, Fast Charging",
       detailedDescription: `This braided USB-C cable offers fast charging and is designed to resist tangling, ensuring a long-lasting experience.`,
       price: 350,
@@ -48,7 +48,7 @@ const Chargingcable = () => {
     {
       id: 5,
       name: "Lightning Cable for iPhone",
-      image: "https://via.placeholder.com/150",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT22r4m-0DrzaVzYCP1nhPXjg94hbQHN9uRZQ&s",
       keyFeatures: "MFI Certified, 1.2m length",
       detailedDescription: `This MFI-certified Lightning cable ensures a safe and fast charging experience for your iPhone and iPad.`,
       price: 250,
@@ -57,7 +57,7 @@ const Chargingcable = () => {
     {
       id: 6,
       name: "USB-A to Lightning Cable",
-      image: "https://via.placeholder.com/150",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2he7_bMNHAFpa9-loQJzhwxjikWKI1ZjSfA&s",
       keyFeatures: "MFI Certified, Durable build",
       detailedDescription: `This USB-A to Lightning cable is built to last and is MFI certified for a safe charging experience.`,
       price: 280,
@@ -66,7 +66,7 @@ const Chargingcable = () => {
     {
       id: 7,
       name: "USB-C to Micro USB Cable",
-      image: "https://via.placeholder.com/150",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQGw-iTXVAZCA1EO5CHcHnjdInGIAworC4uQ&s",
       keyFeatures: "Fast charging, 1.5 meters",
       detailedDescription: `This USB-C to Micro USB cable offers fast charging and data transfer for your devices, with a 1.5-meter length.`,
       price: 320,
@@ -75,7 +75,7 @@ const Chargingcable = () => {
     {
       id: 8,
       name: "USB-C to USB-A Cable",
-      image: "https://via.placeholder.com/150",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR11kO2KTkE0VskrrrDtDTB5qiBSvqgEsQ47g&s",
       keyFeatures: "Fast charging, 2 meters",
       detailedDescription: `A versatile USB-C to USB-A cable designed for fast charging with a 2-meter length, perfect for long-distance charging.`,
       price: 300,
@@ -84,7 +84,7 @@ const Chargingcable = () => {
     {
       id: 9,
       name: "Heavy-Duty Braided Micro USB Cable",
-      image: "https://via.placeholder.com/150",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEQMVOlhPSLTV8G5EkMc9QUUhGvD2NfhpqSw&s",
       keyFeatures: "Braided, Durable, 1 meter",
       detailedDescription: `This heavy-duty braided Micro USB cable is 1 meter long and designed for longevity, perfect for daily use.`,
       price: 350,
@@ -93,7 +93,7 @@ const Chargingcable = () => {
     {
       id: 10,
       name: "USB-C to USB-C Fast Charging Cable",
-      image: "https://via.placeholder.com/150",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF_3oBHAwGNjTq6JxoWqy-SCC2PCjP9CRwvA&s",
       keyFeatures: "Fast charging, 1 meter",
       detailedDescription: `This USB-C to USB-C cable supports fast charging and is 1 meter long, perfect for quick charging of compatible devices.`,
       price: 400,
@@ -102,7 +102,7 @@ const Chargingcable = () => {
     {
       id: 11,
       name: "3-in-1 Charging Cable",
-      image: "https://via.placeholder.com/150",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj4j-psnJxHJfivOiHUTLjQXa-tB97cUMxqA&s",
       keyFeatures: "Multiple connectors, Universal compatibility",
       detailedDescription: `This 3-in-1 charging cable includes USB-C, Micro USB, and Lightning connectors, making it compatible with most devices.`,
       price: 350,
@@ -111,7 +111,7 @@ const Chargingcable = () => {
     {
       id: 12,
       name: "USB-C to Lightning Cable (Short)",
-      image: "https://via.placeholder.com/150",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9gtVWSg8S01XHdoe7GVcjwo7l1a5eHmkryg&s",
       keyFeatures: "Short cable, Fast charging",
       detailedDescription: `A short USB-C to Lightning cable designed for fast charging and portability, perfect for charging on the go.`,
       price: 250,
@@ -238,7 +238,10 @@ const Chargingcable = () => {
             <p className="charging-cable-price">₹{cable.price}</p>
             <p className="charging-cable-reviews"><strong>Reviews:</strong> {cable.reviews}</p>
             <p className="charging-cable-description">{cable.detailedDescription}</p>
-            <button className="charging-cable-btn">Add to Cart</button>
+            <button className="shop-now" onClick={() => addToCart(cable)}>
+    Add to Cart
+</button>
+
           </div>
         </div>
       ))}
